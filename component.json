@@ -5,6 +5,6 @@
   "main" : "store.js",
   "scripts" : [ "store.js" ],
   "dependencies": {
-    "segmentio/json" : "*"
+    "component/json" : "*"
   }
 }
