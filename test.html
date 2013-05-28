@@ -7,14 +7,14 @@
 		div { color: green; }
 		#errorOutput div { color: red; }
 	</style>
-	<script src="./json.js"></script>
-	<script src="./store.js"></script>
+	<script src="./build/build.js"></script>
 </head>
 <body>
 	tests for <a href="http://github.com/marcuswestin/store.js">store.js</a>
 	<div id="errorOutput"></div>
 
 	<script>
+    var store = require('store');
 		(function() {
 			var doc = document,
 				errorOutput = doc.getElementById('errorOutput'),
@@ -32,9 +32,9 @@
 
 			function doFirstPass() {
 				store.clear()
-				
+
 				store.get('unsetValue') // see https://github.com/marcuswestin/store.js/issues/63
-				
+
 				store.set('foo', 'bar')
 				assert(store.get('foo') == 'bar', "stored key 'foo' not equal to stored value 'bar'")
 
