@@ -1,3 +1,6 @@
+v2.0.0
++ Component-tizing
+
 v1.3.8
 + Fix closing </iframe> tag for IE7 (GH issue #67)
 
