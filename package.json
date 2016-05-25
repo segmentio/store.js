@@ -4,7 +4,7 @@
   "description": "A localStorage wrapper for all browsers without using cookies or flash. Uses localStorage, globalStorage, and userData behavior under the hood",
   "main": "src/store.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node scripts/run-node-tests"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,8 @@
   },
   "directories": {
     "lib": "."
+  },
+  "dependencies": {
+    "json3": "^3.3.2"
   }
 }

@@ -1,5 +1,7 @@
 "use strict"
 
+var JSON = require('json3');
+
 module.exports = (function() {
 	// Store.js
 	var store = {},
